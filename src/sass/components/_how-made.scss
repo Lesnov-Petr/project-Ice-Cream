@@ -2,6 +2,13 @@
   padding-top: 125px;
   padding-bottom: 145px;
   background-color: $secondary-bg-color;
+  // background-image: url('./images/mobile/bg-milk.png');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    // background-image: url('./images/mobile/bg-milk@2x.png');
+  }
 
   @include for-size(tablet) {
     padding-bottom: 246px;
@@ -143,7 +150,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 0 37px;
+  padding: 0px 37px;
   height: 44px;
   border-radius: 22px;
   background-color: $white-color;
@@ -163,11 +170,13 @@
 
 .making__btn-icon {
   margin-left: 14px;
+  width: 7px;
+  height: 10px;
 }
 
 .making__list {
   @include for-size(tablet) {
-    @include flexbox(flex-start);
+    @include flexbox(flex-start, baseline);
     margin: -30px;
   }
 
@@ -200,6 +209,19 @@
   @include for-size(desktop) {
     margin-bottom: 40px;
   }
+}
+
+.icon1 {
+  width: 33px;
+  height: 50px;
+}
+.icon2 {
+  width: 50px;
+  height: 50px;
+}
+.icon3 {
+  width: 44px;
+  height: 50px;
 }
 
 .making__data {

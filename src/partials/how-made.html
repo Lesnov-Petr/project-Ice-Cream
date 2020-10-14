@@ -3,11 +3,31 @@
     <p class="making__subtitle">tradition and love</p>
     <h2 class="making__title">how it’s made?</h2>
     <div class="making__wrapper">
-      <img
-        class="making__img"
-        src=""
-        alt="A jug of milk on the background of a cow"
-      />
+      <picture class="making__img">
+        <source
+          srcset="
+            ./images/desktop/cow-milk.png    1x,
+            ./images/desktop/cow-milk@2x.png 2x
+          "
+          media="(min-width: 1200px)" />
+        <source
+          srcset="
+            ./images/tablet/cow-milk.png    1x,
+            ./images/tablet/cow-milk@2x.png 2x
+          "
+          media="(min-width: 768px)" />
+        <source
+          srcset="
+            ./images/mobile/cow-milk.png    1x,
+            ./images/mobile/cow-milk@2x.png 2x
+          "
+          media="(max-width: 767px)" />
+        <img
+          class=""
+          src="./images/desktop/cow-milk.png"
+          alt="A jug of milk on the background of a cow"
+      /></picture>
+
       <div class="making__wrapper-text">
         <p class="making__text-dark">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
@@ -24,35 +44,112 @@
           Aliquam erat volutpat. Aenean accumsan.
         </p>
         <a href="" class="making__btn"
-          >Read more
-          <!-- <svg class="making__btn-icon">
-                <use href="./src/images/sprite.svg#read-more-button"></use>
-              </svg> -->
+          ><span>Read more</span>
+          <svg class="making__btn-icon">
+            <use href="./images/sprite.svg#read-more-button"></use>
+          </svg>
         </a>
       </div>
     </div>
     <ul class="making__list">
       <li class="making__item">
-        <img src="" alt="milk" class="making__item-img" />
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/icon1.png    1x,
+              ./images/desktop/icon1@2x.png 2x
+            "
+            media="(min-width: 1200px)" />
+          <source
+            srcset="
+              ./images/tablet/icon1.png    1x,
+              ./images/tablet/icon1@2x.png 2x
+            "
+            media="(min-width: 768px)" />
+          <source
+            srcset="
+              ./images/mobile/icon1.png    1x,
+              ./images/mobile/icon1@2x.png 2x
+            "
+            media="(max-width: 767px)" />
+          <img
+            src="./images/desktop/icon1.png"
+            alt="milk"
+            class="making__item-img icon1"
+        /></picture>
+
         <span class="making__data">721</span>
         <p class="making__item-text">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
       </li>
       <li class="making__item">
-        <img src="" alt="fruits" class="making__item-img" />
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/icon2.png    1x,
+              ./images/desktop/icon2@2x.png 2x
+            "
+            media="(min-width: 1200px)" />
+          <source
+            srcset="
+              ./images/tablet/icon2.png    1x,
+              ./images/tablet/icon2@2x.png 2x
+            "
+            media="(min-width: 768px)" />
+          <source
+            srcset="
+              ./images/mobile/icon2.png    1x,
+              ./images/mobile/icon2@2x.png 2x
+            "
+            media="(max-width: 767px)" />
+          <img
+            class="making__item-img icon2"
+            src="./images/desktop/icon2.png"
+            alt="fruits"
+        /></picture>
         <span class="making__data">16kg</span>
         <p class="making__item-text">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
       </li>
       <li class="making__item">
-        <img src="" alt="ice-cream" class="making__item-img" />
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/icon3.png    1x,
+              ./images/desktop/icon3@2x.png 2x
+            "
+            media="(min-width: 1200px)" />
+          <source
+            srcset="
+              ./images/tablet/icon3.png    1x,
+              ./images/tablet/icon3@2x.png 2x
+            "
+            media="(min-width: 768px)" />
+          <source
+            srcset="
+              ./images/mobile/icon3.png    1x,
+              ./images/mobile/icon3@2x.png 2x
+            "
+            media="(max-width: 767px)" />
+          <img
+            src="./images/desktop/icon3.png"
+            alt="ice-cream"
+            class="making__item-img icon3"
+        /></picture>
+
         <span class="making__data">84</span>
         <p class="making__item-text">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
       </li>
     </ul>
+    <!-- <img
+      src="./images/desktop/collage.png"
+      alt="Collage of different types of ice-cream"
+      class="collage-img"
+      
+    /> -->
   </div>
 </section>
