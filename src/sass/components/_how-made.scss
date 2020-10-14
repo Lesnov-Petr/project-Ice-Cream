@@ -139,6 +139,32 @@
   }
 }
 
+.making__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 37px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: $white-color;
+  text-decoration: none;
+  @include font(700, 14px, 1.29);
+  color: $accent-color;
+
+  @include for-size(tablet) {
+    @include font(700, 16px, 1.31);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-btn-color;
+  }
+}
+
+.making__btn-icon {
+  margin-left: 14px;
+}
+
 .making__list {
   @include for-size(tablet) {
     @include flexbox(flex-start);
@@ -162,6 +188,17 @@
   @include for-size(desktop) {
     margin: 15px;
     flex-basis: calc((100% - 15px * 6) / 3);
+  }
+}
+
+.making__item-img {
+  margin-bottom: 16px;
+  @include for-size(tablet) {
+    margin-bottom: 36px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 40px;
   }
 }
 
