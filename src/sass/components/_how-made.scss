@@ -33,30 +33,74 @@
 }
 
 .making__title {
+  margin-bottom: 26px;
   @include font(400, 34px, 1.15, $title-font);
   text-align: center;
   text-transform: uppercase;
   color: $accent-color;
 
   @include for-size(tablet) {
+    margin-bottom: 50px;
     @include font(400, 48px, 1.15, $title-font);
   }
 
   @include for-size(desktop) {
+    margin-bottom: 55px;
     @include font(400, 58px, 1.13, $title-font, 0.06);
+  }
+}
+
+.making__img {
+  @include for-size(mobile-only) {
+    margin-bottom: 46px;
+  }
+
+  @include for-size(tablet) {
+    margin-right: 17px;
+    flex-basis: calc((100% - 17px) / 2);
+  }
+
+  @include for-size(desktop) {
+    margin-right: 74px;
+    flex-basis: calc((100% - 74px) / 2);
+  }
+}
+
+.making__wrapper {
+  margin-bottom: 39px;
+
+  @include for-size(tablet) {
+    @include flexbox();
+    margin-bottom: 66px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 39px;
+  }
+}
+.making__wrapper-text {
+  @include for-size(tablet) {
+    flex-basis: calc((100% - 17px) / 2);
+  }
+
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 74px) / 2);
   }
 }
 
 .making__text-dark {
   @include font(500, 12px, 1.62);
   color: $primary-text-color;
+  margin-bottom: 30px;
 
   @include for-size(tablet) {
     @include font(500, 14px, 1.76);
+    margin-bottom: 50px;
   }
 
   @include for-size(desktop) {
     @include font(500, 16px, 1.76);
+    margin-bottom: 35px;
   }
 }
 
@@ -70,6 +114,28 @@
 
   @include for-size(desktop) {
     @include font(500, 14px, 1.94);
+  }
+
+  &--f {
+    margin-bottom: 10px;
+    @include for-size(tablet) {
+      margin-bottom: 14px;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &--s {
+    margin-bottom: 17px;
+    @include for-size(tablet) {
+      margin-bottom: 62px;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 45px;
+    }
   }
 }
 
